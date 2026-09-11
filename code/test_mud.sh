@@ -1,0 +1,11 @@
+python main_avvp.py \
+  --mode test \
+  --test_weights ../models/checkpoint_best.pth \
+  --audio_dir ../data/CLAP/features \
+  --video_dir ../data/CLIP/features \
+  --st_dir   ../data/feats/r2plus1d_18 \
+  --a_pseudo_data_dir ../data/CLAP/segment_pseudo_labels \
+  --v_pseudo_data_dir ../data/CLIP/segment_pseudo_labels \
+  --label_test ../data/AVVP_test_pd.csv \
+  --input_a_dim 768 \
+  --input_v_dim 768
